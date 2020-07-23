@@ -1,0 +1,82 @@
+body{
+    background-color: rgba(0, 0, 0, 0.884);
+}
+.clock{
+    height: 300px;
+    width: 300px;
+    border: 15px solid white;
+    border-radius: 50%;
+    border-color: #FFC600;
+    padding: 30px;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    box-shadow:
+    0 0 0 4px rgba(0,0,0,0.1),
+    inset 0 0 0 3px black,
+    inset 0 0 10px black,
+    0 0 10px rgba(0,0,0,0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); /* account for the height of the clock hands */
+  }
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: #FFC600;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  }
+
+#time,#time2, #time3{
+    border: .4rem solid black;
+    border-radius: .500rem;
+    margin: 10px;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all .07s ease;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    width: 10rem;
+    text-align: center;
+    color:#FFC600;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 .5rem black;
+  }
+
+.contain{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    color:  black;
+    background-color: #FFC600;
+    padding: 15px;
+    border-radius: .500rem;
+    border: .3rem solid black;
+    font-size: 15px;
+}
+dad{
+    display: flex;
+    /* flex: 1; */
+    color: #FFC600;
+    justify-content: center;
+
+    text-align: center;
+    padding-top: -40px;
+    /* padding-bottom: 40px; */
+    border: 15px solid #FFC600;
+}
+.fresca{
+    color: orange;
+}
